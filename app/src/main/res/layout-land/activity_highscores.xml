@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#515151"
+    tools:context=".HighscoresActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highscores"
+        android:textColor="#C546DC"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/highscore1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="monospace"
+        android:text="ABC.....00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/highscore"
+        app:layout_constraintStart_toEndOf="@+id/highscore"
+        app:layout_constraintTop_toTopOf="@+id/highscore" />
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="1. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/highscore2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="ABC.....00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/highscore3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="monospace"
+        android:text="ABC.....00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/highscore7"
+        app:layout_constraintStart_toEndOf="@+id/highscore7"
+        app:layout_constraintTop_toTopOf="@+id/highscore7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/highscore4"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="monospace"
+        android:text="ABC.....00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/highscore5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highscore2" />
+
+    <TextView
+        android:id="@+id/highscore5"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="monospace"
+        android:text="ABC.....00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.904" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goHome"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <TextView
+        android:id="@+id/highscore6"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="monospace"
+        android:text="2. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/highscore2"
+        app:layout_constraintEnd_toStartOf="@+id/highscore2"
+        app:layout_constraintTop_toTopOf="@+id/highscore2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/highscore8"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="monospace"
+        android:text="4. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/highscore4"
+        app:layout_constraintEnd_toStartOf="@+id/highscore4"
+        app:layout_constraintTop_toTopOf="@+id/highscore4" />
+
+    <TextView
+        android:id="@+id/highscore9"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="monospace"
+        android:text="5. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/highscore5"
+        app:layout_constraintEnd_toStartOf="@+id/highscore5"
+        app:layout_constraintTop_toTopOf="@+id/highscore5" />
+
+    <TextView
+        android:id="@+id/highscore7"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:fontFamily="monospace"
+        android:text="3. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/highscore5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highscore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
